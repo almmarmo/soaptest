@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SetMigracaoSisComRoteiro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMigracaoSisComRoteiroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMigracaoSisComRoteiroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMigracaoGuia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMigracaoGuiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMigracaoGuiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterProgramacao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataInicio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataFim" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Emissoras" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterProgramacaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObterProgramacaoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMigracaoIBMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetMigracaoIBMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetMigracaoIBMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoPebble">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlAsRunAutomacao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoPebbleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemRoteiroPosExibicaoPebbleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoHarris">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="titulo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoHarrisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemRoteiroPosExibicaoHarrisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoOmneon">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="database" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="titulo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtemRoteiroPosExibicaoOmneonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtemRoteiroPosExibicaoOmneonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterInfoProgramas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emissora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reconid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObterInfoProgramasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObterInfoProgramasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetMigracaoSisComRoteiroSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMigracaoSisComRoteiro" />
+  </wsdl:message>
+  <wsdl:message name="SetMigracaoSisComRoteiroSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMigracaoSisComRoteiroResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetMigracaoGuiaSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMigracaoGuia" />
+  </wsdl:message>
+  <wsdl:message name="SetMigracaoGuiaSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMigracaoGuiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObterProgramacaoSoapIn">
+    <wsdl:part name="parameters" element="tns:ObterProgramacao" />
+  </wsdl:message>
+  <wsdl:message name="ObterProgramacaoSoapOut">
+    <wsdl:part name="parameters" element="tns:ObterProgramacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetMigracaoIBMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SetMigracaoIBMS" />
+  </wsdl:message>
+  <wsdl:message name="SetMigracaoIBMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SetMigracaoIBMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoPebbleSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoPebble" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoPebbleSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoPebbleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoHarrisSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoHarris" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoHarrisSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoHarrisResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoOmneonSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoOmneon" />
+  </wsdl:message>
+  <wsdl:message name="ObtemRoteiroPosExibicaoOmneonSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtemRoteiroPosExibicaoOmneonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObterInfoProgramasSoapIn">
+    <wsdl:part name="parameters" element="tns:ObterInfoProgramas" />
+  </wsdl:message>
+  <wsdl:message name="ObterInfoProgramasSoapOut">
+    <wsdl:part name="parameters" element="tns:ObterInfoProgramasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MigracaoSisComSoap">
+    <wsdl:operation name="SetMigracaoSisComRoteiro">
+      <wsdl:input message="tns:SetMigracaoSisComRoteiroSoapIn" />
+      <wsdl:output message="tns:SetMigracaoSisComRoteiroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoGuia">
+      <wsdl:input message="tns:SetMigracaoGuiaSoapIn" />
+      <wsdl:output message="tns:SetMigracaoGuiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterProgramacao">
+      <wsdl:input message="tns:ObterProgramacaoSoapIn" />
+      <wsdl:output message="tns:ObterProgramacaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoIBMS">
+      <wsdl:input message="tns:SetMigracaoIBMSSoapIn" />
+      <wsdl:output message="tns:SetMigracaoIBMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoPebble">
+      <wsdl:input message="tns:ObtemRoteiroPosExibicaoPebbleSoapIn" />
+      <wsdl:output message="tns:ObtemRoteiroPosExibicaoPebbleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoHarris">
+      <wsdl:input message="tns:ObtemRoteiroPosExibicaoHarrisSoapIn" />
+      <wsdl:output message="tns:ObtemRoteiroPosExibicaoHarrisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoOmneon">
+      <wsdl:input message="tns:ObtemRoteiroPosExibicaoOmneonSoapIn" />
+      <wsdl:output message="tns:ObtemRoteiroPosExibicaoOmneonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterInfoProgramas">
+      <wsdl:input message="tns:ObterInfoProgramasSoapIn" />
+      <wsdl:output message="tns:ObterInfoProgramasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MigracaoSisComSoap" type="tns:MigracaoSisComSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetMigracaoSisComRoteiro">
+      <soap:operation soapAction="http://tempuri.org/SetMigracaoSisComRoteiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoGuia">
+      <soap:operation soapAction="http://tempuri.org/SetMigracaoGuia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterProgramacao">
+      <soap:operation soapAction="http://tempuri.org/ObterProgramacao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoIBMS">
+      <soap:operation soapAction="http://tempuri.org/SetMigracaoIBMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoPebble">
+      <soap:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoPebble" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoHarris">
+      <soap:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoHarris" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoOmneon">
+      <soap:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoOmneon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterInfoProgramas">
+      <soap:operation soapAction="http://tempuri.org/ObterInfoProgramas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MigracaoSisComSoap12" type="tns:MigracaoSisComSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetMigracaoSisComRoteiro">
+      <soap12:operation soapAction="http://tempuri.org/SetMigracaoSisComRoteiro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoGuia">
+      <soap12:operation soapAction="http://tempuri.org/SetMigracaoGuia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterProgramacao">
+      <soap12:operation soapAction="http://tempuri.org/ObterProgramacao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetMigracaoIBMS">
+      <soap12:operation soapAction="http://tempuri.org/SetMigracaoIBMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoPebble">
+      <soap12:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoPebble" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoHarris">
+      <soap12:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoHarris" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtemRoteiroPosExibicaoOmneon">
+      <soap12:operation soapAction="http://tempuri.org/ObtemRoteiroPosExibicaoOmneon" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterInfoProgramas">
+      <soap12:operation soapAction="http://tempuri.org/ObterInfoProgramas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MigracaoSisCom">
+    <wsdl:port name="MigracaoSisComSoap" binding="tns:MigracaoSisComSoap">
+      <soap:address location="http://localhost/migracaosiscom/migracaosiscom.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MigracaoSisComSoap12" binding="tns:MigracaoSisComSoap12">
+      <soap12:address location="http://localhost/migracaosiscom/migracaosiscom.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
